@@ -1,30 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <title>Pagina Proyecto</title>
 </head>
 
 <body>
-    <div id="add">
+    <div id="header">
         <span>[Making your Life Easier]</span>
+        <br>
         <span>Discovering the World</span>
     </div>
     <div id="add">
-        <button></button>
+
     </div>
     <div id="filters">
-        <button></button>
+            <button class="btn">All</button>
+            <button class="btn">Travel</button>
+            <button class="btn">Lifestyle</button>
+            <button class="btn">Business</button>
+            <button class="btn">Food</button>
+            <button class="btn">Work</button>
     </div>
-    <div id="posts"></div>
+    <div id="posts">
+        <div>
+        <img src="playa.jpg"
+             class="" width="660" height="350" alt="Travel"/>
+             <p>HOLA COMO ESTAS?</p>
+             </div>
+        <div>
+        <img src="playa2.jpg"
+             class="" width="660" height="350" alt="Lifestyle"/>
+             <p>HOLA COMO ESTAS?</p>
+            </div>
+        <div>
+        <img src="lago.jpg"
+             class="" width="660" height="350" alt="Business"/>
+             <p>HOLA COMO ESTAS?</p>
+            </div>
+        <div>
+        <img src="monte.jpg"
+             class="" width="660" height="350" alt="Food"/>
+             <p>HOLA COMO ESTAS?</p>
+            </div>
+
+    </div>
+    
     <div id="add_form">
-        <label>Title</label>
-        <label>Description</label>
-        <label>Type</label>
+        <form class="formulario">
+        <p>CREATE POST</p>
+        <label>
+            <input type="text"
+            placeholder="Title">
+        </label>
+        <label>
+            <input type="text"
+            placeholder="Description">
+        </label>
+        <label>
         <select>
+            <option value="ALL">ALL</option>
             <option value="LIFESTYLE">LIFESTYLE</option>
             <option value="TRAVEL">TRAVEL</option>
+            <option value="BUSINESS">BUSINESS</option>
+            <option value="FOOD">FOOD</option>
+            <option value="WORK">WORK</option>
+            
         </select>
-        <label>Date</label>
+        <label>Date
+            <input type="date">
+        </label>
+        <label><input type="url"
+                placeholder="URL of the Image">
+        </label>
+
+        <button class="btn">Cancel</button>
+        <input type="submit" value="Save">
+
+        </form>
     </div>
 </body>
 
